@@ -23,3 +23,13 @@ export function getAllRooms() {
             });
     };
 }
+
+export const ROOMS_SET_ACTIVE = 'ROOMS_SET_ACTIVE';
+export function setActiveRoom(roomName) {
+    return dispatch => {
+		    dispatch({
+				    type: ROOMS_SET_ACTIVE,
+            payload: roomName
+		    });
+    }
+}
